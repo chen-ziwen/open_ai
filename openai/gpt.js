@@ -21,9 +21,9 @@ class Openai {
                     port: 7890,
                 }
             })
-        });
+        }); 
         this.openai = new OpenAIApi(this.configuration, this.configuration.basePath, this.client);
     }
 }
 
-exports.module = Openai;
+module.exports = Openai;
